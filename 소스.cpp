@@ -1,103 +1,101 @@
-//입출력과 사칙연산
-//백준 2557
+//if문
+//백준 1330
 
 #include <stdio.h>
 
-int main(void)
-{
-	printf("Hello World!");
-
-	return 0;
-}
-
-//백준 10718
-
-#include <stdio.h>
-
-int main(void)
-{
-	printf("강한친구 대한육군\n");
-	printf("강한친구 대한육군\n");
-	return 0;
-}
-
-//백준 1000
-
-#include <stdio.h>
-int main(void)
-{
-	int A, B;
-	scanf("%d %d", &A, &B);
-	printf("%d", A + B);
-	return 0;
-}
-
-//백준 1001
-
-#include <stdio.h>
-int main(void)
-{
-	int A, B;
-	scanf("%d %d", &A, &B);
-	printf("%d", A - B);
-	return 0;
-}
-
-//백준 10998
-
-#include <stdio.h>
-int main(void)
-{
-	int A, B;
-	scanf("%d %d", &A, &B);
-	printf("%d", A*B);
-	return 0;
-}
-
-//백준 10869
-
-#include <stdio.h>
-int main(void)
-{
+int main(void) {
 	int a, b;
 	scanf("%d %d", &a, &b);
-	printf("%d\n", a + b);
-	printf("%d\n", a - b);
-	printf("%d\n", a*b);
-	printf("%d\n", a / b);
-	printf("%d", a%b);
-	return 0;
+
+	if (a > b)
+		printf(">");
+	else if (a < b)
+		printf("<");
+	else
+		printf("==");
 }
 
-//백준 10430
+//백준 9498
 
 #include <stdio.h>
 
 int main()
 {
-	int a, b, c;
-	scanf("%d %d %d", &a, &b, &c);
+	int score;
+	scanf("%d", &score);
+	if (90 <= score && score <= 100)
+		printf("A");
+	else if (80 <= score && score <= 89)
+		printf("B");
+	else if (70 <= score && score <= 79)
+		printf("C");
+	else if (60 <= score && score <= 69)
+		printf("D");
+	else
+		printf("F");
+}
+//백준 2753
 
-	printf("%d\n", (a + b) % c);
-	printf("%d\n", (a%c + b % c) % c);
-	printf("%d\n", (a*b) % c);
-	printf("%d\n", (a%c * b%c) % c);
+#include <stdio.h>
+
+int main()
+{
+	int year;
+	scanf("%d", &year);
+
+	if (year % 400 == 0)
+		printf("1");
+	else if (year % 100 == 0)
+		printf("0");
+	else if (year % 4 == 0)
+		printf("1");
+	else
+		printf("0");
 }
 
-//백준 2588
+//백준 14681
 
 #include <stdio.h>
 
 int main(void)
 {
-	int a, b;
-	int c = 0, d = 0, e = 0;
-	scanf("%d %d", &a, &b);
-	c = (b % 10)*a;
-	d = ((b / 10) % 10)*a;
-	e = (b / 100)*a;
-	printf("%d\n", c);
-	printf("%d\n", d);
-	printf("%d\n", e);
-	printf("%d\n", c + d * 10 + e * 100);
+	int x, y;
+	scanf("%d %d", &x, &y);
+
+	if (0 < x && 0 < y)
+	{
+		printf("1\n");
+	}
+	else if (0 < x && y < 0)
+	{
+		printf("4\n");
+	}
+	else if (x < 0 && 0 < y)
+	{
+		printf("2\n");
+	}
+	else if (x < 0 && y < 0)
+	{
+		printf("3\n");
+	}
+
+	return 0;
+}
+
+
+//백준 2884
+
+#include <stdio.h>
+
+int main()
+{
+	int h, m;
+	scanf("%d %d", &h, &m);
+
+	if (m >= 45)
+		printf("%d %d", h, m - 45);
+	else if (m < 45 && h == 0)
+		printf("%d %d", 23, 60 - (45 - m));
+	else
+		printf("%d %d", h - 1, 60 - (45 - m));
 }
