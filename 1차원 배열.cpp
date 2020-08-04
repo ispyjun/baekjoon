@@ -1,5 +1,35 @@
-//1Â÷¿ø ¹è¿­
-//¹éÁØ 2526
+//1Ã‚Ã·Â¿Ã¸ Â¹Ã¨Â¿
+
+//ë°±ì¤€ 10818
+
+#include <stdio.h>
+
+int main(void)
+{
+	int a = 0, b;
+	int i = 0;
+	int min = 0, max = 0;
+	scanf("%d", &b);
+
+	scanf("%d", &a);
+	min = a;
+	max = a;
+	for (i = 1; i < b; i++)
+	{
+		scanf("%d", &a);
+		if (a >= max) {
+			max = a;
+		}
+		else if (a < min) {
+			min = a;
+		}
+
+	}
+	printf("%d %d", min, max);
+	return 0;
+}
+Â­
+//Â¹Ã©ÃÃ˜ 2526
 
 #include <stdio.h>
 
@@ -29,7 +59,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 2577
+//Â¹Ã©ÃÃ˜ 2577
 
 #include <stdio.h>
 
