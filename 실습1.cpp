@@ -188,3 +188,37 @@ int main(void)
 		printf("\n");
 	}
 }
+
+//백준 1996
+
+#include <stdio.h>
+
+int main(void)
+{
+	int n = 0, k = 0,x=0;
+	int j = 0, i = 0;
+	scanf("%d", &n);
+
+	for (j = 1; j < n+1; j++)
+	{
+		for (i = 1; i < n + 1; i++)
+		{
+			if (i % 2 == 1) {
+				printf("*");
+				printf(" ");
+			}
+		}
+		printf("\n");
+		for (i = 1; i < n + 1; i++)
+		{
+			if (i % 2 == 0) {
+				printf(" ");
+				printf("*");
+			}
+			
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
