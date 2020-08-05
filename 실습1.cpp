@@ -1,5 +1,5 @@
-//½Ç½À1
-//¹éÁØ 10039
+//Â½Ã‡Â½Ã€1
+//Â¹Ã©ÃÃ˜ 10039
 
 #include <stdio.h>
 
@@ -35,7 +35,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 5543
+//Â¹Ã©ÃÃ˜ 5543
 
 #include <stdio.h>
 
@@ -80,7 +80,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 10817
+//Â¹Ã©ÃÃ˜ 10817
 
 #include <stdio.h>
 
@@ -116,7 +116,7 @@ int main()
 	}
 }
 
-//¹éÁØ 2523
+//Â¹Ã©ÃÃ˜ 2523
 
 #include <stdio.h>
 
@@ -149,4 +149,42 @@ int main(void)
 		printf("\n");
 	}
 	return 0;
+}
+
+//ë°±ì¤€ 2446
+
+#include <stdio.h>
+
+int main(void)
+{
+	int n = 0, k = 0, a = 0;
+	int j = 0, i = 0;
+	scanf("%d", &n);
+
+
+	for (i = 0; i < n; i++)
+	{
+		a = n + (n - 1) - 2 * k;
+		for (j = 0; j < k; j++) {
+			printf(" ");
+		}
+		for (j = 0; j < a; j++) {
+			printf("*");
+		}
+		k++;
+		printf("\n");
+	}
+	k--;
+	for (i = n - 1; i > 0; i--)
+	{
+		k--;
+		a = n + (n - 1) - 2 * k;
+		for (j = 0; j < k; j++) {
+			printf(" ");
+		}
+		for (j = 0; j < a; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
 }
