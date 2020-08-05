@@ -1,5 +1,5 @@
-//for¹®
-//¹éÁØ 2739
+//forë¬¸
+//ë°±ì¤€ 2739
 
 #include <stdio.h>
 int main(void)
@@ -11,14 +11,14 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 10950
+//ë°±ì¤€ 10950
 
 #include <stdio.h>
 
 int main(void)
 {
 	int a, b, t, i;
-	scanf("%d", &t); //Å×½ºÆ®ÇÒ È½¼öÀÔ·Â
+	scanf("%d", &t); //í…ŒìŠ¤íŠ¸í•  íšŸìˆ˜ìž…ë ¥
 
 	for (i = 0; i < t; i++) {
 		scanf("%d %d", &a, &b);
@@ -28,7 +28,7 @@ int main(void)
 }
 
 
-//¹éÁØ 8393
+//ë°±ì¤€ 8393
 
 int main(void)
 {
@@ -43,14 +43,14 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 15552
+//ë°±ì¤€ 15552
 
 #include <stdio.h>
 
 int main(void)
 {
 	int a, b, t, i;
-	scanf("%d", &t); //Å×½ºÆ®ÇÒ È½¼öÀÔ·Â
+	scanf("%d", &t); //í…ŒìŠ¤íŠ¸í•  íšŸìˆ˜ìž…ë ¥
 
 	for (i = 0; i < t; i++) {
 		scanf("%d %d", &a, &b);
@@ -60,7 +60,7 @@ int main(void)
 }
 
 
-//¹éÁØ 2741
+//ë°±ì¤€ 2741
 
 #include <stdio.h>
 int main(void)
@@ -72,7 +72,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 2742
+//ë°±ì¤€ 2742
 
 #include <stdio.h>
 int main(void)
@@ -84,7 +84,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 11021
+//ë°±ì¤€ 11021
 
 #include <stdio.h>
 
@@ -102,7 +102,7 @@ int main(void)
 
 }
 
-//¹éÁØ 11022
+//ë°±ì¤€ 11022
 
 #include <stdio.h>
 
@@ -120,7 +120,7 @@ int main(void)
 
 }
 
-//¹éÁØ 2438
+//ë°±ì¤€ 2438
 
 #include <stdio.h>
 int main(void)
@@ -135,7 +135,7 @@ int main(void)
 	return 0;
 }
 
-//¹éÁØ 2439
+//ë°±ì¤€ 2439
 
 #include <stdio.h>
 
@@ -151,6 +151,34 @@ int main(void)
 		for (j = 0; j != i + 1; j++)
 			printf("*");
 		printf("\n");
+	}
+	return 0;
+}
+
+//ë°±ì¤€ 10871
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int n = 0, k = 0,x=0;
+	int j = 0, i = 0;
+	scanf("%d %d", &n, &x);
+
+	int *a;
+	a = (int*)malloc(sizeof(int)*n);
+
+	for (i = 0; i < n; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	for (i = 0; i < n; i++)
+	{
+		if (a[i] < x)
+		{
+			printf("%d ", a[i]);
+		}
 	}
 	return 0;
 }
